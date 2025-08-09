@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CA MCQ Challenge</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .question {
+            margin-bottom: 25px;
+            counter-increment: question-counter;
+        }
+        
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .question-text::before {
+            content: counter(question-counter) ".";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .options {
+            margin-left: 30px;
+        }
+        
+        .option {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .option::before {
+            content: attr(data-option);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        .difficulty-label {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CA Professional Challenge</h1>
+            <div class="subtitle">The Most Difficult MCQ Questions for Chartered Accountants</div>
+        </header>
+        
+        <section class="section">
+            <h2 class="section-title">Advanced Auditing <span class="difficulty-label">Expert Level</span></h2>
+            
+            <div class="question">
+                <div class="question-text">In a qualified audit report, the auditor expresses an opinion with reservations that are:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">Pervasive and material</div>
+                    <div class="option" data-option="b)">Material but not pervasive</div>
+                    <div class="option" data-option="c)">Immaterial but pervasive</div>
+                    <div class="option" data-option="d)">Neither material nor pervasive</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Test checking in auditing primarily reduces:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">The work of an auditor</div>
+                    <div class="option" data-option="b)">The liability of an auditor</div>
+                    <div class="option" data-option="c)">Both (a) and (b)</div>
+                    <div class="option" data-option="d)">None of the above</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Which of the following is <strong>not</strong> a distinctive feature of Management Audit?</div>
+                <div class="options">
+                    <div class="option" data-option="a)">It is an appraisal of both policies and actions</div>
+                    <div class="option" data-option="b)">It is preventive as well as a creative check of cost accounting data</div>
+                    <div class="option" data-option="c)">It is dynamic and result-oriented</div>
+                    <div class="option" data-option="d)">It ensures the sound growth of a business</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">The process of a financial audit begins with:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">Planning</div>
+                    <div class="option" data-option="b)">Execution</div>
+                    <div class="option" data-option="c)">Reporting</div>
+                    <div class="option" data-option="d)">Verification</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Under which section of the Companies Act, 2013, is the first auditor appointed by the Board of Directors within 30 days of company registration?</div>
+                <div class="options">
+                    <div class="option" data-option="a)">139(2)</div>
+                    <div class="option" data-option="b)">139(6)</div>
+                    <div class="option" data-option="c)">142(1)</div>
+                    <div class="option" data-option="d)">142(2)</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Advanced Income Tax <span class="difficulty-label">Challenging</span></h2>
+            
+            <div class="question">
+                <div class="question-text">For the purpose of tax collection, income is classified into:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">Three heads</div>
+                    <div class="option" data-option="b)">Five heads</div>
+                    <div class="option" data-option="c)">Six heads</div>
+                    <div class="option" data-option="d)">Four heads</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Donations eligible for deduction under Section 80G of the Income Tax Act, 1961, must be made to:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">Any charitable institution</div>
+                    <div class="option" data-option="b)">Approved institutions and funds</div>
+                    <div class="option" data-option="c)">Political parties only</div>
+                    <div class="option" data-option="d)">Foreign NGOs</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">The surcharge rate applicable to individuals with a total income exceeding ₹1 crore is:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">10%</div>
+                    <div class="option" data-option="b)">15%</div>
+                    <div class="option" data-option="c)">20%</div>
+                    <div class="option" data-option="d)">25%</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">If an employee receives a Children's Education Allowance, the tax exemption is available for a maximum of:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">1 child</div>
+                    <div class="option" data-option="b)">2 children</div>
+                    <div class="option" data-option="c)">3 children</div>
+                    <div class="option" data-option="d)">No limit</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">A "very senior citizen" for income tax purposes is an individual aged:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">60 years or above</div>
+                    <div class="option" data-option="b)">75 years or above</div>
+                    <div class="option" data-option="c)">80 years or above</div>
+                    <div class="option" data-option="d)">85 years or above</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Advanced TDS (Tax Deducted at Source) <span class="difficulty-label">Expert Level</span></h2>
+            
+            <div class="question">
+                <div class="question-text">TDS on salary is deducted at:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">The time of credit to the employee's account</div>
+                    <div class="option" data-option="b)">The time of payment</div>
+                    <div class="option" data-option="c)">Whichever is earlier between (a) and (b)</div>
+                    <div class="option" data-option="d)">At the end of the financial year</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">No TDS shall be deducted on the GST component of an invoice if:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">It is separately indicated in the invoice</div>
+                    <div class="option" data-option="b)">It is included in the total amount</div>
+                    <div class="option" data-option="c)">A separate invoice is issued for GST</div>
+                    <div class="option" data-option="d)">The amount exceeds ₹10,000</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">If an employee withdraws ₹80,000 from a Recognized Provident Fund after 8 years of service, the TDS applicable is:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">₹8,000</div>
+                    <div class="option" data-option="b)">₹4,000</div>
+                    <div class="option" data-option="c)">Nil</div>
+                    <div class="option" data-option="d)">₹10,000</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">The rate of TDS on interest on securities (under Section 193) is:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">5%</div>
+                    <div class="option" data-option="b)">10%</div>
+                    <div class="option" data-option="c)">20%</div>
+                    <div class="option" data-option="d)">Nil</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">If a premature withdrawal from a Recognized Provident Fund is made without PAN, the TDS rate is:</div>
+                <div class="options">
+                    <div class="option" data-option="a)">10%</div>
+                    <div class="option" data-option="b)">20%</div>
+                    <div class="option" data-option="c)">30%</div>
+                    <div class="option" data-option="d)">Nil</div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 CA Professional Challenge | Designed for Chartered Accountancy Exam Preparation</p>
+            <p>Note: These questions are based on Indian CA curriculum and tax laws as of 2023</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Direct Tax MCQs - CA Exam Challenge</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --correct-color: #2ecc71;
+            --border-radius: 8px;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.3rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--secondary-color);
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 12px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            counter-increment: question-counter;
+            position: relative;
+        }
+        
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 35px;
+            font-size: 1.1rem;
+            color: var(--dark-color);
+        }
+        
+        .question-text::before {
+            content: counter(question-counter) ".";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .options {
+            margin-left: 35px;
+        }
+        
+        .option {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 32px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .option:hover {
+            color: var(--secondary-color);
+        }
+        
+        .option::before {
+            content: attr(data-option);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: var(--primary-color);
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--light-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 20px;
+            transition: all 0.2s;
+        }
+        
+        .option:hover::before {
+            border-color: var(--secondary-color);
+        }
+        
+        .answer {
+            background-color: rgba(46, 204, 113, 0.1);
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-top: 15px;
+            border-left: 4px solid var(--correct-color);
+            display: none;
+        }
+        
+        .show-answer {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.2s;
+        }
+        
+        .show-answer:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .difficulty-label {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 15px;
+            vertical-align: middle;
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .question-text {
+                padding-left: 30px;
+            }
+            
+            .options {
+                margin-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Advanced Direct Tax MCQs</h1>
+            <div class="subtitle">Challenging Questions for CA Final Examination</div>
+        </header>
+        
+        <section class="section">
+            <h2 class="section-title">Direct Tax Provisions <span class="difficulty-label">Expert Level</span></h2>
+            
+            <div class="question">
+                <div class="question-text">Under the Direct Tax Code (DTC) 2025, which category of taxpayers is <strong>eliminated</strong> compared to the Income Tax Act, 1961?</div>
+                <div class="options">
+                    <div class="option" data-option="a">Resident and Non-Resident</div>
+                    <div class="option" data-option="b">Resident but Not Ordinarily Resident (RNOR)</div>
+                    <div class="option" data-option="c">Non-Resident and RNOR</div>
+                    <div class="option" data-option="d">All categories remain the same</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(1)">Show Answer</button>
+                <div class="answer" id="answer1">
+                    <strong>Correct Answer:</strong> b) RNOR is removed under DTC, simplifying to only Resident/Non-Resident classifications.
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">A taxpayer conceals income of ₹50 lakhs and claims false deductions of ₹20 lakhs. What is the <strong>minimum penalty</strong> under Section 270A for underreporting income?</div>
+                <div class="options">
+                    <div class="option" data-option="a">50% of the tax evaded</div>
+                    <div class="option" data-option="b">100% of the tax evaded</div>
+                    <div class="option" data-option="c">200% of the tax evaded</div>
+                    <div class="option" data-option="d">No penalty if corrected before assessment</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(2)">Show Answer</button>
+                <div class="answer" id="answer2">
+                    <strong>Correct Answer:</strong> a) 50% for underreporting; 200% if misreporting is proven.
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">In international taxation, which BEPS (Base Erosion and Profit Shifting) Action mandates country-by-country reporting for MNCs with revenue exceeding ₹5,500 crores?</div>
+                <div class="options">
+                    <div class="option" data-option="a">Action 5</div>
+                    <div class="option" data-option="b">Action 13</div>
+                    <div class="option" data-option="c">Action 15</div>
+                    <div class="option" data-option="d">Action 21</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(3)">Show Answer</button>
+                <div class="answer" id="answer3">
+                    <strong>Correct Answer:</strong> b) BEPS Action 13 requires CBCR for large MNCs.
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Under the DTC 2025, what is the <strong>tax rate for high earners</strong> (income above ₹5 crores)?</div>
+                <div class="options">
+                    <div class="option" data-option="a">30% + surcharge</div>
+                    <div class="option" data-option="b">35% flat</div>
+                    <div class="option" data-option="c">37% including cess</div>
+                    <div class="option" data-option="d">40% for non-residents</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(4)">Show Answer</button>
+                <div class="answer" id="answer4">
+                    <strong>Correct Answer:</strong> b) DTC proposes a flat 35% rate for high earners, unlike the current slab system.
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Which of the following is <strong>not eligible</strong> for deduction under Section 80C of the Income Tax Act?</div>
+                <div class="options">
+                    <div class="option" data-option="a">ELSS mutual funds</div>
+                    <div class="option" data-option="b">Children's tuition fees</div>
+                    <div class="option" data-option="c">Credit card payments</div>
+                    <div class="option" data-option="d">Principal repayment of home loan</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(5)">Show Answer</button>
+                <div class="answer" id="answer5">
+                    <strong>Correct Answer:</strong> c) Credit card payments are not eligible for 80C deduction.
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">International Taxation <span class="difficulty-label">Advanced</span></h2>
+            
+            <div class="question">
+                <div class="question-text">The "Principal Purpose Test" (PPT) under MLI (Multilateral Instrument) is designed to combat:</div>
+                <div class="options">
+                    <div class="option" data-option="a">Transfer pricing manipulation</div>
+                    <div class="option" data-option="b">Treaty shopping</div>
+                    <div class="option" data-option="c">Permanent establishment avoidance</div>
+                    <div class="option" data-option="d">Thin capitalization</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(6)">Show Answer</button>
+                <div class="answer" id="answer6">
+                    <strong>Correct Answer:</strong> b) PPT prevents treaty shopping by examining the principal purpose of transactions.
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">Under the OECD Transfer Pricing Guidelines, which method is considered the "default" for determining ALP?</div>
+                <div class="options">
+                    <div class="option" data-option="a">Comparable Uncontrolled Price (CUP)</div>
+                    <div class="option" data-option="b">Resale Price Method</div>
+                    <div class="option" data-option="c">Transactional Net Margin Method (TNMM)</div>
+                    <div class="option" data-option="d">Profit Split Method</div>
+                </div>
+                <button class="show-answer" onclick="toggleAnswer(7)">Show Answer</button>
+                <div class="answer" id="answer7">
+                    <strong>Correct Answer:</strong> c) TNMM is the most commonly used method as per OECD guidelines.
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 CA Direct Tax Challenge | Based on latest amendments and judicial pronouncements</p>
+            <p>Note: These questions test advanced understanding of direct tax provisions and international taxation principles</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleAnswer(questionNum) {
+            const answer = document.getElementById(`answer${questionNum}`);
+            const button = document.querySelector(`#answer${questionNum}`).previousElementSibling;
+            
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                button.textContent = 'Show Answer';
+            } else {
+                answer.style.display = 'block';
+                button.textContent = 'Hide Answer';
+            }
+        }
+    </script>
+</body>
+</html>
